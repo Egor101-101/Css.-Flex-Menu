@@ -20,33 +20,42 @@ header {
 
 .flexParent {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    flex-grow: 0.5;
 
     background-color: #333;
-    height: 100px;
     padding: 50px;
 }
 
 .right {
-    margin-right: auto;
+    min-width: 100px;
+    width: 10%;
 }
 
 .left {
-    margin-left: auto;
+    min-width: 300px;
+    width: 40%;
+}
+
+.menu {
+    min-width: 500px;
+    width: 50%;
 }
 
 .logo {
-    font-family: winky rough;
+    font-family: 'Winky Rough';
     font-weight: 300;
+    font-size: 2em;
+    cursor: pointer;
 }
 
 .button {
+    padding-right: 1em;
+
     background-color: rgba(28, 28, 28, 0);
     border: none;
 
-    font-family: Inconsolata;
+    font-family: 'Inconsolata';
     font-weight: 600;
     font-size: x-large;
 
@@ -55,7 +64,6 @@ header {
 
 .contact {
     background-color: rgba(28, 28, 28, 0);
-    border: none;
 
     padding: 15px;
     border: 2px solid white;
